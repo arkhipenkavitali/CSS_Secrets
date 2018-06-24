@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>1</title>
+	<style>
+	/*with extended bg-position*/
+		.block {
+			background: url(http://csssecrets.io/images/code-pirate.svg)
+	            		no-repeat bottom right #58a;
+            width: 150px;
+            height: 150px;
+            background-position: right 20px bottom 20px;
+            margin-bottom: 20px;
+		}
+	/*with background-origin*/
+		.block2 {
+			padding: 20px;
+			background: url(http://csssecrets.io/images/code-pirate.svg)
+	            		no-repeat bottom right #58a;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            -webkit-background-origin: content-box;
+            background-origin: content-box;
+            box-sizing: border-box;
+		}
+	/*with bg-position(calc)*/
+		.block3 {
+			background: url(http://csssecrets.io/images/code-pirate.svg)
+	            		no-repeat bottom right #58a;
+	        width: 150px;
+	        height: 150px;
+	        background-position: calc(100% - 20px) calc(100% - 20px);
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="block"></div>
+	<div class="block2"></div>
+	<div class="block3"></div>
+
+</body>
+</html>
